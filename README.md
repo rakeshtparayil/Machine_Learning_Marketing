@@ -1,19 +1,36 @@
-
 # Creative Scoring Predictions
 
-This repository contains a Jupyter Notebook (`creative_scoring_predictions.ipynb`) that provides an analysis of creative assets' performance and predicts scores based on key metrics. It leverages Python's data analysis and visualization libraries to explore the dataset and build predictive insights.
+This repository contains a Jupyter Notebook (`creative_scoring_predictions.ipynb`) that analyzes creative assets' performance and predicts their effectiveness. The project utilizes Python's data analysis and machine learning libraries for preprocessing, analysis, and evaluation.
 
 ## Features
 
-- **Data Analysis**: 
-  - Load and clean data from the provided `creatives_c.csv` file.
-  - Perform exploratory data analysis (EDA) to uncover trends, correlations, and distributions.
-- **Visualizations**: 
-  - Generate insightful plots using Matplotlib and Seaborn to visualize key metrics.
-- **Statistical Analysis**: 
-  - Apply statistical techniques to identify significant predictors.
-- **Modeling**: 
-  - Build and evaluate predictive models for creative scoring.
+### Workflow Steps:
+1. **Importing Data**:
+   - Load the dataset (`creatives_c.csv`) for analysis using Pandas.
+
+2. **Exploratory Data Analysis (EDA)**:
+   - Explore the dataset for trends, missing values, and basic statistics.
+   - Visualize key insights using Matplotlib and Seaborn.
+
+3. **Renaming and Cleaning Columns**:
+   - Rename columns for better readability and consistency.
+   - Remove irrelevant or redundant columns.
+
+4. **Classification (Ad Evaluation)**:
+   - Evaluate whether an ad is "Good" or "Bad" based on statistical methods such as mean and standard deviation of key metrics.
+
+5. **Encoding**:
+   - Encode categorical variables to prepare data for modeling.
+
+6. **Data Splitting**:
+   - Split the dataset into training and testing sets for model evaluation.
+
+7. **Prediction**:
+   - Use machine learning models to predict the effectiveness of ads.
+
+8. **Classification and Model Evaluation**:
+   - Evaluate the model's performance using metrics like accuracy, precision, recall, and F1-score.
+   - Generate classification reports and confusion matrices.
 
 ## Requirements
 
@@ -24,58 +41,8 @@ Ensure you have the following Python packages installed:
 - `matplotlib`
 - `seaborn`
 - `scipy`
+- `sklearn`
 
-You can install the required packages using:
+Install the required packages using:
 ```bash
-pip install pandas numpy matplotlib seaborn scipy
-```
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/creative-scoring-predictions.git
-   ```
-2. Navigate to the repository directory:
-   ```bash
-   cd creative-scoring-predictions
-   ```
-3. Place your `creatives_c.csv` file in the same directory as the notebook.
-4. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook creative_scoring_predictions.ipynb
-   ```
-5. Run the notebook cells sequentially to execute the analysis.
-
-## Dataset
-
-The analysis uses a CSV file (`creatives_c.csv`) containing performance metrics for creative assets. Ensure the dataset includes relevant columns for metrics such as:
-
-- **Reach**
-- **Engagement**
-- **CTR (Click-Through Rate)**
-- **Conversions**
-
-## Outputs
-
-- Data visualizations showcasing trends and insights.
-- Statistical summaries of key metrics.
-- Predictive models for scoring creative assets.
-- Recommendations based on analysis results.
-
-## Contributing
-
-Contributions are welcome! Feel free to submit issues or pull requests to enhance the analysis or add new features.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-Special thanks to the developers of the Python libraries used in this project:
-- [Pandas](https://pandas.pydata.org/)
-- [NumPy](https://numpy.org/)
-- [Matplotlib](https://matplotlib.org/)
-- [Seaborn](https://seaborn.pydata.org/)
-- [SciPy](https://scipy.org/)
+pip install pandas numpy matplotlib seaborn scipy scikit-learn
