@@ -1,4 +1,3 @@
-```markdown
 # Testing and Scoring Methodologies
 
 This repository contains multiple Jupyter Notebooks, each focusing on unique methodologies for testing and scoring various datasets. The project leverages Python's robust data analysis and machine learning libraries for preprocessing, evaluation, and performance assessment.
